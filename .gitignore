@@ -1,0 +1,9 @@
+node_modules
+dist
+.DS_Store
+*.log
+
+# Local reference material (not part of the site)
+/JaydenTeoh.github.io-main/
+/Husnain_Ali_CV-2.pdf
+.playwright-mcp

@@ -84,7 +84,7 @@
 .typing-cursor {
   display: inline-block;
   margin-left: 2px;
-  color: var(--link);
+  color: var(--hover);
   font-weight: 400;
   transform: translateY(-0.05em);
 }

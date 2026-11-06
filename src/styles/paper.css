@@ -400,13 +400,13 @@
 }
 
 .paper-page .paper-prose a {
-  color: #1a5490;
+  color: var(--link);
   text-decoration: underline;
   text-underline-offset: 2px;
 }
 
 .paper-page .paper-prose a:hover {
-  color: #0d3a6b;
+  color: var(--link-hover);
 }
 
 .paper-page .paper-prose strong {

@@ -2,8 +2,8 @@ export const siteName = 'Husnain Ali'
 export const siteUrl = 'https://husnain-ali21.github.io'
 export const siteDescription =
   'Husnain Ali is an AI research engineer writing about interpretability, language models, and machine learning research.'
-// Social preview image. Set to e.g. '/images/profile.jpg' once you add a photo.
-export const defaultOgImage = null
+// Social preview image. JPEG rather than WebP: some link-preview scrapers skip WebP.
+export const defaultOgImage = '/images/profile.jpg'
 
 // Trailing-slash canonical form. GitHub Pages serves directory routes
 // (e.g. /blog/2026/my-post/index.html) and 301-redirects the no-slash URL to

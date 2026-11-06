@@ -3,9 +3,17 @@ import SEO from '../components/SEO.jsx'
 import PaperCard from '../components/PaperCard.jsx'
 import TypingText from '../components/TypingText.jsx'
 import { siteDescription, siteName } from '../data/site.js'
-import { experience, links, photo, publications, researchInterests } from '../data/profile.js'
+import { experience, links, photo, photoFull, publications, researchInterests } from '../data/profile.js'
 
 const isExternal = (href) => /^https?:\/\//.test(href)
+
+function Ext({ href, children }) {
+  return (
+    <a href={href} target="_blank" rel="noreferrer">
+      {children}
+    </a>
+  )
+}
 
 export default function Home() {
   return (
@@ -20,19 +28,20 @@ export default function Home() {
               <TypingText text={siteName} />
             </h1>
             <p>
-              I'm a Founding Research Engineer at Isgen, where I build multilingual detectors for
-              AI-generated text and work on making their decisions explainable to the people who
-              use them.
+              I'm a Founding Research Engineer at <Ext href="https://isgen.ai/">Isgen</Ext>, where
+              I build multilingual detectors for AI-generated text and work on making their
+              decisions explainable to the people who use them.
             </p>
             <p>
               I've spent about five years in industry working on natural language processing and
-              computer vision, most of it at Smodin.io. Over that time my interest has moved from
+              computer vision, most of it at <Ext href="https://smodin.io/">Smodin.io</Ext>. Over that time my interest has moved from
               building applications on top of models to understanding the models themselves: the
               representations they learn, the mechanisms they encode, and the algorithms they end
               up implementing.
             </p>
             <p>
-              I studied Software Engineering at the National University of Sciences and Technology
+              I studied Software Engineering at the{' '}
+              <Ext href="https://nust.edu.pk/">National University of Sciences and Technology</Ext>{' '}
               (NUST) in Islamabad, Pakistan.
             </p>
 
@@ -53,7 +62,7 @@ export default function Home() {
 
           {photo ? (
             <div className="bio-portrait">
-              <a href={photo}>
+              <a href={photoFull || photo}>
                 <img src={photo} alt={`Photo of ${siteName}`} />
               </a>
             </div>
@@ -87,7 +96,7 @@ export default function Home() {
               <li key={e.org}>
                 <div className="experience-head">
                   <strong>
-                    {e.org}, {e.role}
+                    {e.url ? <Ext href={e.url}>{e.org}</Ext> : e.org}, {e.role}
                   </strong>
                   <span className="experience-dates">{e.dates}</span>
                 </div>

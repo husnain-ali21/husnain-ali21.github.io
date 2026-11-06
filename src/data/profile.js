@@ -1,8 +1,9 @@
 // Everything shown on the home page lives here, so updating the site rarely
 // means touching JSX.
 
-// Set to e.g. '/images/profile.jpg' after dropping a photo into public/images/.
-export const photo = null
+// Square crop shown in the circle; clicking it opens the full photo.
+export const photo = '/images/profile.webp'
+export const photoFull = '/images/profile-full.webp'
 
 export const links = [
   { label: 'email', href: 'mailto:husnainalikhan21@gmail.com' },
@@ -21,6 +22,7 @@ export const researchInterests = [
 export const experience = [
   {
     org: 'Isgen',
+    url: 'https://isgen.ai/',
     role: 'Founding Research Engineer',
     dates: 'Nov 2025 – present',
     location: 'Manchester, UK (remote)',
@@ -29,6 +31,7 @@ export const experience = [
   },
   {
     org: 'Smodin.io',
+    url: 'https://smodin.io/',
     role: 'AI Research and Development Engineer',
     dates: 'Aug 2021 – Oct 2025',
     location: 'Casper, USA (remote)',
@@ -37,6 +40,7 @@ export const experience = [
   },
   {
     org: 'MathLeaks',
+    url: 'https://mathleaks.com/',
     role: 'Computer Vision Research and Development Engineer',
     dates: 'Apr 2021 – Jul 2021',
     location: 'Sweden (remote)',

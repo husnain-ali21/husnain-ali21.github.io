@@ -7,10 +7,10 @@
    ============================================================ */
 
 .paper-page {
-  --paper-accent: #2563eb;
-  --paper-accent-hover: #1d4ed8;
-  --paper-accent-soft: #dbeafe;
-  --paper-accent-muted: #93c5fd;
+  --paper-accent: #f89449;
+  --paper-accent-hover: #e07a2c;
+  --paper-accent-soft: #fee8d6;
+  --paper-accent-muted: #fbbf8f;
   --paper-serif: 'Crimson Pro', 'Source Serif Pro', 'Charter', 'Iowan Old Style',
     Georgia, serif;
   --paper-sans: var(--paper-serif);
@@ -173,7 +173,7 @@
   border-color: var(--paper-accent);
   color: var(--paper-accent-hover);
   transform: translateY(-1px);
-  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.18);
+  box-shadow: 0 4px 14px rgba(248, 148, 73, 0.18);
 }
 
 .paper-page .paper-link i {
@@ -516,7 +516,7 @@
   margin: 2rem 0;
   font-size: 1.5rem;
   line-height: 1.7;
-  box-shadow: 0 2px 12px rgba(37, 99, 235, 0.06);
+  box-shadow: 0 2px 12px rgba(248, 148, 73, 0.06);
 }
 
 .paper-page .paper-takeaway::before {
@@ -699,7 +699,7 @@
 }
 
 .paper-page .paper-footnote-body a {
-  color: #93c5fd;
+  color: #fbbf8f;
 }
 
 /* ---------- Benchmark results slider ---------- */
@@ -989,7 +989,7 @@
 }
 
 .paper-page .paper-cite-tooltip-link:hover {
-  color: #93c5fd;
+  color: #fbbf8f;
 }
 
 .paper-page .paper-cite-meta {
